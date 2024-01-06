@@ -1,0 +1,890 @@
+<!-- HEADER -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>BeJewelry</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/img/bejeweler2-logo.svg" />
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+    <!-- Jost -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet" />
+</head>
+
+<body></body>
+
+</html>
+
+<main id="main">
+    <!-- NAVIGATION -->
+    <!-- NAVIGATION -->
+    <nav class="navigation">
+        <div class="container-fluid">
+            <div class="row navigation-row position-relative">
+                <div class="col-md-5 navbar-toggle-container d-flex">
+                    <button class="navbar-toggle">
+                        <img class="navbar-toggle-icon" src="assets/img/hamburger-svgrepo-com.svg" alt="" />
+                    </button>
+                    <ul class="navbar-links">
+                        <button class="navbar-cancel-button">
+                            <svg width="20px" height="20px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" stroke-width="3" fill="none">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <line x1="8.06" y1="8.06" x2="55.41" y2="55.94"></line>
+                                    <line x1="55.94" y1="8.06" x2="8.59" y2="55.94"></line>
+                                </g>
+                            </svg>
+                        </button>
+                        <div class="navbar-links-icons-container">
+                            <div class="navbar-user-container navbar-links-md">
+                                <svg class="navbar-icons-svg" width="26" viewBox="0 0 26 26" aria-label="user icon">
+                                    <circle class="path" cx="13" cy="9.7" r="4.1"></circle>
+                                    <path class="path" d="M19.51,18.1v2.31h-13V18.1c0-2.37,2.92-4.3,6.51-4.3S19.51,15.73,19.51,18.1Z"></path>
+                                </svg>
+                            </div>
+                            <div class="navbar-wish-container navbar-links-md">
+                                <svg class="navbar-icons-svg" width="26" viewBox="0 0 26 26" aria-label="wishlist icon">
+                                    <path class="path" d="M16.7,6a3.78,3.78,0,0,0-2.3.8A5.26,5.26,0,0,0,13,8.5a5,5,0,0,0-1.4-1.6A3.52,3.52,0,0,0,9.3,6a4.33,4.33,0,0,0-4.2,4.6c0,2.8,2.3,4.7,5.7,7.7.6.5,1.2,1.1,1.9,1.7H13a.37.37,0,0,0,.3-.1c.7-.6,1.3-1.2,1.9-1.7,3.4-2.9,5.7-4.8,5.7-7.7A4.3,4.3,0,0,0,16.7,6Z"></path>
+                                </svg>
+                                <span class="navbar-badge">0</span>
+                            </div>
+                            <div class="navbar-store-container navbar-links-md order-5 d-flex align-items-center">
+                                <div class="navbar-store">
+                                    <svg class="navbar-icons-svg" width="26" viewBox="0 0 26 26" aria-label="cart icon">
+                                        <polygon class="path" points="20.4 20.4 5.6 20.4 6.83 10.53 19.17 10.53 20.4 20.4"></polygon>
+                                        <path class="path" d="M9.3,10.53V9.3a3.7,3.7,0,1,1,7.4,0v1.23"></path>
+                                    </svg>
+                                    <span class="navbar-badge">0</span>
+                                </div>
+                                <p class="navbar-money navbar-links-money">$0.00</p>
+                            </div>
+                        </div>
+                        <li class="navbar-item">
+                            <a class="navbar-link navbar-home-link" href="index.html">
+                                <svg class="navbar-home-icon" width="18px" height="18px" viewBox="0 0 24 24" id="home-alt-3" data-name="Flat Color" xmlns="http://www.w3.org/2000/svg" class="icon flat-color">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g id="SVGRepo_iconCarrier">
+                                        <path id="primary" d="M21.71,11.29l-9-9a1,1,0,0,0-1.42,0l-9,9a1,1,0,0,0-.21,1.09A1,1,0,0,0,3,13H4v7.3A1.77,1.77,0,0,0,5.83,22H8.5a1,1,0,0,0,1-1V16.1a1,1,0,0,1,1-1h3a1,1,0,0,1,1,1V21a1,1,0,0,0,1,1h2.67A1.77,1.77,0,0,0,20,20.3V13h1a1,1,0,0,0,.92-.62A1,1,0,0,0,21.71,11.29Z"></path>
+                                    </g>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="navbar-item">
+                            <a class="navbar-link" href="product.html">products</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a class="navbar-link" href="inspirations.html">inspirations</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a class="navbar-link" href="about.html">about</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a class="navbar-link" href="contact.html">contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-2 navbar-logo-container d-flex">
+                    <a href="index.html">
+                        <img class="navbar-logo-icon" src="assets/img/bejeweler2-logo.svg" alt="" /></a>
+                </div>
+                <div class="col-md-5 navbar-icons-container">
+                    <div class="navbar-product-icon">
+                        <a href="product.html">
+                            <svg viewBox="0 0 26 26" class="navbar-icons-svg" width="26" aria-hidden="true">
+                                <g id="Layer_4" data-name="Layer 4">
+                                    <rect x="15" y="5" width="6" height="6" class="path"></rect>
+                                    <rect x="5" y="5" width="6" height="6" class="path"></rect>
+                                    <rect x="5" y="15" width="6" height="6" class="path"></rect>
+                                    <rect x="15" y="15" width="6" height="6" class="path"></rect>
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="navbar-user-container navbar-user-button-container navbar-user-mobile">
+                        <svg class="navbar-icons-svg" width="26" viewBox="0 0 26 26" aria-label="user icon">
+                            <circle class="path" cx="13" cy="9.7" r="4.1"></circle>
+                            <path class="path" d="M19.51,18.1v2.31h-13V18.1c0-2.37,2.92-4.3,6.51-4.3S19.51,15.73,19.51,18.1Z"></path>
+                        </svg>
+                        <div class="login-box">
+                            <button class="login-close-button">
+                                <svg width="20px" height="20px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" stroke-width="3" fill="none">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g id="SVGRepo_iconCarrier">
+                                        <line x1="8.06" y1="8.06" x2="55.41" y2="55.94"></line>
+                                        <line x1="55.94" y1="8.06" x2="8.59" y2="55.94"></line>
+                                    </g>
+                                </svg>
+                            </button>
+                            <h2 class="login-login">Login</h2>
+                            <div class="login-username">
+                                <input class="login-input login-user-icon" type="text" placeholder="Username or email *" />
+                            </div>
+                            <div class="login-password">
+                                <input class="login-input login-lock-icon" type="password" placeholder="Password *" />
+                            </div>
+                            <div class="login-remember">
+                                <input type="checkbox" />
+                                <span class="login-remember">Remember me</span>
+                            </div>
+                            <button class="login-button">
+                                <a href="#">Login</a>
+                            </button>
+                            <div class="text-center pt-2">
+                                <a class="login-lost" href="find.html">Lost your password?</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="navbar-wish-container">
+                        <a href="wishlist.html">
+                            <svg class="navbar-icons-svg" width="26" viewBox="0 0 26 26" aria-label="wishlist icon">
+                                <path class="path" d="M16.7,6a3.78,3.78,0,0,0-2.3.8A5.26,5.26,0,0,0,13,8.5a5,5,0,0,0-1.4-1.6A3.52,3.52,0,0,0,9.3,6a4.33,4.33,0,0,0-4.2,4.6c0,2.8,2.3,4.7,5.7,7.7.6.5,1.2,1.1,1.9,1.7H13a.37.37,0,0,0,.3-.1c.7-.6,1.3-1.2,1.9-1.7,3.4-2.9,5.7-4.8,5.7-7.7A4.3,4.3,0,0,0,16.7,6Z"></path>
+                            </svg>
+                        </a>
+                        <span class="navbar-badge">0</span>
+                    </div>
+                    <div class="navbar-store-container d-flex align-items-center">
+                        <div class="cart-collection">
+                            <button class="cart-close-button">
+                                <svg width="20px" height="20px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" stroke-width="3" fill="none">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g id="SVGRepo_iconCarrier">
+                                        <line x1="8.06" y1="8.06" x2="55.41" y2="55.94"></line>
+                                        <line x1="55.94" y1="8.06" x2="8.59" y2="55.94"></line>
+                                    </g>
+                                </svg>
+                            </button>
+                            <div class="cart-collection-header">
+                                <svg width="30" viewBox="0 0 26 26" aria-label="cart icon">
+                                    <polygon class="path" points="20.4 20.4 5.6 20.4 6.83 10.53 19.17 10.53 20.4 20.4"></polygon>
+                                    <path class="path" d="M9.3,10.53V9.3a3.7,3.7,0,1,1,7.4,0v1.23"></path>
+                                </svg>
+                                <div class="cart-collection-heading">Cart</div>
+                            </div>
+                            <div class="cart-collection-items-box d-none">
+                                <div class="cart-items-contain my-2">
+                                    <div class="container cart-pad">
+                                        <div class="row">
+                                            <div class="col-4 d-flex align-items-center">
+                                                <img class="w-100" src="assets/img/jeweler2-product-pic8-800x800.webp" alt="" />
+                                            </div>
+                                            <div class="col-5 border-right">
+                                                <h6 class="cart-clr">
+                                                    Fancy earrings
+                                                </h6>
+                                                <h6>
+                                                    <span class="cart-item-title">Material:</span><span>Gold</span>
+                                                </h6>
+                                                <h6>
+                                                    <span class="cart-item-title">Gift wrapping:</span><span>No</span>
+                                                </h6>
+                                                <h6>
+                                                    <span class="cart-item-title">Price:</span><span class="cart-clr">$25.00</span>
+                                                </h6>
+                                            </div>
+                                            <div class="col-3 d-flex align-items-center">
+                                                <h5 class="item-price">$25.00</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="container items-count">
+                                        <div class="row">
+                                            <div class="col-7 d-flex justify-content-center">
+                                                <div id="stepper-container" class="position-relative me-2">
+                                                    <div class="stepper-container">
+                                                        <button class="preview-user-info-button preview-user-info-button-decrement preview-numbers" id="decrement">
+                                                            <img class="w-75 preview-user-icon" src="assets/img/minus-svgrepo-com.svg" alt="" />
+                                                        </button>
+                                                        <input class="preview-user-info-input" type="number" value="1" min="1" max="100" step="1" id="preview-input" readonly />
+                                                        <button class="preview-user-info-button preview-user-info-button-increment preview-numbers" id="increment">
+                                                            <img class="w-75 preview-user-icon" src="assets/img/plus-large-svgrepo-com.svg" alt="" />
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-5 d-flex align-items-center justify-content-center">
+                                                <img class="item-recycle" src="assets/img/recycle-bin-svgrepo-com.svg" alt="" />
+                                                <button class="item-remove-btn">
+                                                    Remove
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart-collect">
+                                <svg width="64" viewBox="0 0 26 26" aria-label="cart icon">
+                                    <polygon class="path" points="20.4 20.4 5.6 20.4 6.83 10.53 19.17 10.53 20.4 20.4"></polygon>
+                                    <path class="path" d="M9.3,10.53V9.3a3.7,3.7,0,1,1,7.4,0v1.23"></path>
+                                </svg>
+                                <p>Your cart is currently empty.</p>
+                            </div>
+                            <div class="cart-incomes">
+                                <div class="cart-subtotal">
+                                    <p>Subtotal:</p>
+                                    <span>$0.00</span>
+                                </div>
+                                <div class="cart-total">
+                                    <p>Total:</p>
+                                    <span>$0.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="navbar-store">
+                            <svg class="navbar-icons-svg navbar-cart-icon" width="26" viewBox="0 0 26 26" aria-label="cart icon">
+                                <polygon class="path" points="20.4 20.4 5.6 20.4 6.83 10.53 19.17 10.53 20.4 20.4"></polygon>
+                                <path class="path" d="M9.3,10.53V9.3a3.7,3.7,0,1,1,7.4,0v1.23"></path>
+                            </svg>
+                            <span class="navbar-badge">0</span>
+                        </div>
+                        <p class="navbar-money">$0.00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- LOGIN FIXED -->
+    <div class="login-fixed-box">
+        <button class="login-close-button fixed-close-button">
+            <svg width="20px" height="20px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" stroke-width="3" fill="none">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                    <line x1="8.06" y1="8.06" x2="55.41" y2="55.94"></line>
+                    <line x1="55.94" y1="8.06" x2="8.59" y2="55.94"></line>
+                </g>
+            </svg>
+        </button>
+        <h2 class="login-login fixed-login-heading">Login</h2>
+        <div class="login-username px-3">
+            <input class="login-input login-user-icon" type="text" placeholder="Username or email *" />
+        </div>
+        <div class="login-password px-3">
+            <input class="login-input login-lock-icon" type="password" placeholder="Password *" />
+        </div>
+        <div class="login-remember px-3">
+            <input type="checkbox" />
+            <span class="login-remember">Remember me</span>
+        </div>
+        <button class="login-button">
+            <a href="#">Login</a>
+        </button>
+        <div class="text-center pt-2">
+            <a class="login-lost" href="find.html">Lost your password?</a>
+        </div>
+    </div>
+
+    <!-- OVERLAY -->
+    <div class="overlay"></div>
+
+
+    <!-- LIGHT EARRINGS -->
+    <section class="product-details-section me-0 me-md-5">
+        <div class="product-find-link product-find-link-xl">
+            <a href="index.html">Home</a>
+            <span>&nbsp; > &nbsp; <a href="">Earrings</a> &nbsp; > &nbsp; Light earrings</span>
+        </div>
+        <div class="container-fluid product-details-container">
+            <div class="row">
+                <div class="col-lg-7 col-md-6">
+                    <div class="d-flex justify-content-center product-details-sticky">
+                        <div class="product-jewelry-show">
+                            <div class="product-jewelry-overflow d-flex">
+                                <img class="w-100 product-jewelry-image" src="assets/img/jeweler2-product-pic3-800x800.webp" alt="">
+                                <img class="w-100 product-zoom-image" src="assets/img/jeweler2-product-pic3a.webp" alt="">
+                            </div>
+                            <div class="d-flex product-jewelry-show-option mb-5 mb-md-0">
+                                <div class="product-jewelry-full product-jewelry-option">
+                                    <img class="w-100" src="assets/img/jeweler2-product-pic3-800x800.webp" alt="">
+                                </div>
+                                <div class="product-jewelry-zoom-box product-jewelry-option">
+                                    <img class="w-100 preview-earrings" src="assets/img/jeweler2-product-pic3a.webp" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-6">
+                    <div class="product-related">
+                        <div class="product-find-link">
+                            <a href="index.html">Home</a>
+                            <span>&nbsp; > &nbsp; <a href="">Earrings</a> &nbsp; > &nbsp; Light earrings</span>
+                        </div>
+                        <div class="product-related-wrapper">
+                            <h2 class="preview-info-heading pb-4">Light earrings</h2>
+                            <h5 class="preview-price pb-4 product-related-price">$12.00 - $33.00</h5>
+                            <div class="d-flex preview-user-info align-items-center preview-material">
+                                <h5 class="preview-options">Material</h5>
+                                <div class="position-relative material-box">
+                                    <img class="preview-options-material" src="assets/img/jeweler2-material1.webp" alt="">
+                                    <span class="material-tooltip">Gold</span>
+                                </div>
+                                <div class="position-relative material-box">
+                                    <img class="preview-options-material" src="assets/img/jeweler2-material2.webp" alt="">
+                                    <span class="material-tooltip">Platinum</span>
+                                </div>
+                                <div class="position-relative material-box">
+                                    <img class="preview-options-material" src="assets/img/jeweler2-material3.webp" alt="">
+                                    <span class="material-tooltip">Silver</span>
+                                </div>
+                            </div>
+                            <div class="d-flex preview-user-info">
+                                <h5 class="preview-options">Gem</h5>
+                                <select class="preview-options-select" name="" id="">
+                                    <option value="">Choose an option</option>
+                                    <option value="">Amethyst</option>
+                                    <option value="">Diamond</option>
+                                </select>
+                            </div>
+                            <div class="d-flex preview-user-info">
+                                <h5 class="preview-options">Gift wrapping</h5>
+                                <select class="preview-options-select" name="" id="">
+                                    <option value="">Choose an option</option>
+                                    <option value="">Yes</option>
+                                    <option value="">No</option>
+                                </select>
+                            </div>
+                            <div class="d-flex preview-user-info">
+                                <div id="stepper-earrings-container" class="position-relative me-2">
+                                    <div class="stepper-container">
+                                        <button class="preview-user-info-button preview-user-info-button-decrement preview-numbers" id="decrement"> <img class="w-75 preview-user-icon" src="assets/img/minus-svgrepo-com.svg" alt=""> </button>
+                                        <input class="preview-user-info-input" type="number" value="1" min="1" max="100" step="1" id="preview-input" readonly>
+                                        <button class="preview-user-info-button preview-user-info-button-increment preview-numbers" id="increment"> <img class="w-75 preview-user-icon" src="assets/img/plus-large-svgrepo-com.svg" alt=""> </button>
+                                    </div>
+                                </div>
+                                <button class="btns preview-user-cart me-3" disabled><a href="#">Add to cart</a></button>
+                                <svg class="navbar-icons-svg preview-wishlist" width="26" viewBox="0 0 26 26" aria-label="wishlist icon">
+                                    <path class="path" d="M16.7,6a3.78,3.78,0,0,0-2.3.8A5.26,5.26,0,0,0,13,8.5a5,5,0,0,0-1.4-1.6A3.52,3.52,0,0,0,9.3,6a4.33,4.33,0,0,0-4.2,4.6c0,2.8,2.3,4.7,5.7,7.7.6.5,1.2,1.1,1.9,1.7H13a.37.37,0,0,0,.3-.1c.7-.6,1.3-1.2,1.9-1.7,3.4-2.9,5.7-4.8,5.7-7.7A4.3,4.3,0,0,0,16.7,6Z"></path>
+                                </svg>
+                            </div>
+                            <div class="product-facility">
+                                <div class="product-facility-time d-flex">
+                                    <img src="assets/img/jeweler2-details-icon1.svg" alt="">
+                                    <p>30 days free return</p>
+                                </div>
+                                <div class="product-facility-payment d-flex">
+                                    <img src="assets/img/jeweler2-details-icon2.svg" alt="">
+                                    <p>Easy payment</p>
+                                </div>
+                                <div class="product-facility-delivery d-flex">
+                                    <img src="assets/img/jeweler2-details-icon3.svg" alt="">
+                                    <p>24 hours delivery</p>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-center mb-5">
+                                <img class="w-75" src="assets/img/jeweler2-gallery-pic3.webp" alt="">
+                            </div>
+                            <div class="product-gift">
+                                <h5 class="product-gift-heading">Perfect gift</h5>
+                                <p class="product-gift-content">Amet ipsum, enim massa enim mattis pulvinar. Pretium sem a, sed lacus ac. Mattis sapien nunc malesuada tincidunt. Libero integer velit, lorem est. Velit adipiscing scelerisque eget nunc. Nunc, scelerisque vel netus pulvinar quam phasellus. Aenean at id nam neque fermentum. Sagittis eget bibendum commodo lectus nunc donec tincidunt sociis. Purus magna in diam neque, commodo egestas aliquam blandit.</p>
+                            </div>
+                            <div class="product-features">
+                                <h5 class="product-gift-heading pb-4">Features</h5>
+                                <div class="d-flex">
+                                    <div class="product-features-feature d-flex align-items-center">
+                                        <img src="assets/img/tick-svgrepo-com.svg" alt="">
+                                        <p>Metus ultricies curabitur sodales ipsum elit cubilia.</p>
+                                    </div>
+                                    <div class="product-features-feature d-flex align-items-center">
+                                        <img src="assets/img/tick-svgrepo-com.svg" alt="">
+                                        <p>Tempor consequat turpis turpis vivamus quam fusce.</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex">
+                                    <div class="product-features-feature d-flex align-items-center">
+                                        <img src="assets/img/tick-svgrepo-com.svg" alt="">
+                                        <p>Aliquam elementum ligula erat arcu maecenas hac elementum.</p>
+                                    </div>
+                                    <div class="product-features-feature d-flex align-items-center">
+                                        <img src="assets/img/tick-svgrepo-com.svg" alt="">
+                                        <p>Consequat fusce maecenas morbi phasellus magna nisl.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-center product-gift-overflow">
+                                <img class="product-gift-ring w-75" src="assets/img/jeweler2-product-pic7-800x800.webp" alt="">
+                            </div>
+                            <div class="product-seo">
+                                <div class="preview-tags product-related-tags">
+                                    <p>Tags: <a class="preview-tag product-related-tag">earnings</a> <a class="preview-tag product-related-tag">gold</a> <a class="preview-tag product-related-tag">pearls</a></p>
+                                </div>
+                                <div class="product-categories">
+                                    Categories: <a class="preview-link product-link">Earnings,</a> <a class="preview-link product-link">Watches</a>
+                                </div>
+                                <span class="preview-more prodcut-more">SKU: BE/JW2/0001</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RELATED PRODUCTS -->
+    <div class="container-fluid products-wrapper">
+        <!-- HEADING -->
+        <div class="ms-0 ms-md-5 mb-5">
+            <div class="d-flex justify-content-start">
+                <hr class="main-section-hr" />
+                <p class="main-section-title">VESTIBULUM</p>
+            </div>
+            <h2 class="products-heading">RELATED PRODUCTS</h1>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="products-gallery">
+                    <div class="product-icons">
+                        <button class="product-link-button">
+                            <svg class="product-icons-svg" width="24" viewBox="0 0 26 26">
+                                <defs>
+                                    <style>
+                                        .path {
+                                            stroke-miterlimit: 10;
+                                        }
+                                    </style>
+                                </defs>
+                                <g>
+                                    <path d="M10.17,8.76l2.12-2.12a5,5,0,0,1,7.07,0h0a5,5,0,0,1,0,7.07l-2.12,2.12" class="path"></path>
+                                    <path d="M15.83,17.24l-2.12,2.12a5,5,0,0,1-7.07,0h0a5,5,0,0,1,0-7.07l2.12-2.12" class="path"></path>
+                                    <line x1="10.17" y1="15.83" x2="15.83" y2="10.17" class="path"></line>
+                                </g>
+                            </svg>
+                            <span class="product-tooltip">View product</span>
+                        </button>
+                        <button class="product-wish-button position-relative">
+                            <svg class="product-icons-svg product-wish-icon" width="24" viewBox="0 0 26 26">
+                                <path class="path" d="M16.7,6a3.78,3.78,0,0,0-2.3.8A5.26,5.26,0,0,0,13,8.5a5,5,0,0,0-1.4-1.6A3.52,3.52,0,0,0,9.3,6a4.33,4.33,0,0,0-4.2,4.6c0,2.8,2.3,4.7,5.7,7.7.6.5,1.2,1.1,1.9,1.7H13a.37.37,0,0,0,.3-.1c.7-.6,1.3-1.2,1.9-1.7,3.4-2.9,5.7-4.8,5.7-7.7A4.3,4.3,0,0,0,16.7,6Z"></path>
+                            </svg>
+                            <svg class="product-icons-svg add-to-wishlist" width="24" viewBox="0 0 26 26">
+                                <path class="path" d="M16.7,6a3.78,3.78,0,0,0-2.3.8A5.26,5.26,0,0,0,13,8.5a5,5,0,0,0-1.4-1.6A3.52,3.52,0,0,0,9.3,6a4.33,4.33,0,0,0-4.2,4.6c0,2.8,2.3,4.7,5.7,7.7.6.5,1.2,1.1,1.9,1.7H13a.37.37,0,0,0,.3-.1c.7-.6,1.3-1.2,1.9-1.7,3.4-2.9,5.7-4.8,5.7-7.7A4.3,4.3,0,0,0,16.7,6Z"></path>
+                            </svg>
+                            <span class="wishlist-tooltip">Add to wishlist</span>
+                        </button>
+                        <button class="product-preview-button position-relative">
+                            <svg class="product-icons-svg" width="24" viewBox="0 0 26 26">
+                                <defs>
+                                    <style>
+                                        .path {
+                                            fill: none;
+                                            stroke-miterlimit: 10;
+                                        }
+                                    </style>
+                                </defs>
+                                <line x1="7" y1="7" x2="11.29" y2="11.29" class="path"></line>
+                                <line x1="14.62" y1="14.62" x2="18.91" y2="18.91" class="path"></line>
+                                <polyline points="7 15.57 7 19 10.43 19" class="path"></polyline>
+                                <polyline points="15.57 19 19 19 19 15.57" class="path"></polyline>
+                                <polyline points="10.43 7 7 7 7 10.43" class="path"></polyline>
+                                <polyline points="19 10.43 19 7 15.57 7" class="path"></polyline>
+                                <line x1="14.71" y1="11.29" x2="19" y2="7" class="path"></line>
+                                <line x1="7" y1="19" x2="11.29" y2="14.71" class="path"></line>
+                            </svg>
+                            <span class="preview-tooltip">Preview</span>
+                        </button>
+                    </div>
+                    <p class="product-discount">-20%</p>
+                    <img class="w-100" src="assets/img/jeweler2-product-pic3-800x800.webp" alt="" />
+                    <div class="product-details">
+                        <h6 class="product-item">Light earrings</h6>
+                        <p>$12.00 – $33.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="products-gallery">
+                    <div class="product-icons">
+                        <button class="product-link-button">
+                            <svg class="product-icons-svg" width="24" viewBox="0 0 26 26">
+                                <defs>
+                                    <style>
+                                        .path {
+                                            stroke-miterlimit: 10;
+                                        }
+                                    </style>
+                                </defs>
+                                <g>
+                                    <path d="M10.17,8.76l2.12-2.12a5,5,0,0,1,7.07,0h0a5,5,0,0,1,0,7.07l-2.12,2.12" class="path"></path>
+                                    <path d="M15.83,17.24l-2.12,2.12a5,5,0,0,1-7.07,0h0a5,5,0,0,1,0-7.07l2.12-2.12" class="path"></path>
+                                    <line x1="10.17" y1="15.83" x2="15.83" y2="10.17" class="path"></line>
+                                </g>
+                            </svg>
+                            <span class="product-tooltip">View product</span>
+                        </button>
+                        <button class="product-wish-button position-relative">
+                            <svg class="product-icons-svg product-wish-icon" width="24" viewBox="0 0 26 26">
+                                <path class="path" d="M16.7,6a3.78,3.78,0,0,0-2.3.8A5.26,5.26,0,0,0,13,8.5a5,5,0,0,0-1.4-1.6A3.52,3.52,0,0,0,9.3,6a4.33,4.33,0,0,0-4.2,4.6c0,2.8,2.3,4.7,5.7,7.7.6.5,1.2,1.1,1.9,1.7H13a.37.37,0,0,0,.3-.1c.7-.6,1.3-1.2,1.9-1.7,3.4-2.9,5.7-4.8,5.7-7.7A4.3,4.3,0,0,0,16.7,6Z"></path>
+                            </svg>
+                            <svg class="product-icons-svg add-to-wishlist" width="24" viewBox="0 0 26 26">
+                                <path class="path" d="M16.7,6a3.78,3.78,0,0,0-2.3.8A5.26,5.26,0,0,0,13,8.5a5,5,0,0,0-1.4-1.6A3.52,3.52,0,0,0,9.3,6a4.33,4.33,0,0,0-4.2,4.6c0,2.8,2.3,4.7,5.7,7.7.6.5,1.2,1.1,1.9,1.7H13a.37.37,0,0,0,.3-.1c.7-.6,1.3-1.2,1.9-1.7,3.4-2.9,5.7-4.8,5.7-7.7A4.3,4.3,0,0,0,16.7,6Z"></path>
+                            </svg>
+                            <span class="wishlist-tooltip">Add to wishlist</span>
+                        </button>
+                        <button class="product-preview-button position-relative">
+                            <svg class="product-icons-svg" width="24" viewBox="0 0 26 26">
+                                <defs>
+                                    <style>
+                                        .path {
+                                            fill: none;
+                                            stroke-miterlimit: 10;
+                                        }
+                                    </style>
+                                </defs>
+                                <line x1="7" y1="7" x2="11.29" y2="11.29" class="path"></line>
+                                <line x1="14.62" y1="14.62" x2="18.91" y2="18.91" class="path"></line>
+                                <polyline points="7 15.57 7 19 10.43 19" class="path"></polyline>
+                                <polyline points="15.57 19 19 19 19 15.57" class="path"></polyline>
+                                <polyline points="10.43 7 7 7 7 10.43" class="path"></polyline>
+                                <polyline points="19 10.43 19 7 15.57 7" class="path"></polyline>
+                                <line x1="14.71" y1="11.29" x2="19" y2="7" class="path"></line>
+                                <line x1="7" y1="19" x2="11.29" y2="14.71" class="path"></line>
+                            </svg>
+                            <span class="preview-tooltip">Preview</span>
+                        </button>
+                    </div>
+                    <img class="w-100" src="assets/img/jeweler2-product-pic9-800x800.webp" alt="" />
+                    <div class="product-details">
+                        <h6 class="product-item">Queen bracelet</h6>
+                        <p>$599.90 – $1,119.90</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="products-gallery">
+                    <div class="product-icons">
+                        <button class="product-link-button">
+                            <svg class="product-icons-svg" width="24" viewBox="0 0 26 26">
+                                <defs>
+                                    <style>
+                                        .path {
+                                            stroke-miterlimit: 10;
+                                        }
+                                    </style>
+                                </defs>
+                                <g>
+                                    <path d="M10.17,8.76l2.12-2.12a5,5,0,0,1,7.07,0h0a5,5,0,0,1,0,7.07l-2.12,2.12" class="path"></path>
+                                    <path d="M15.83,17.24l-2.12,2.12a5,5,0,0,1-7.07,0h0a5,5,0,0,1,0-7.07l2.12-2.12" class="path"></path>
+                                    <line x1="10.17" y1="15.83" x2="15.83" y2="10.17" class="path"></line>
+                                </g>
+                            </svg>
+                            <span class="product-tooltip">View product</span>
+                        </button>
+                        <button class="product-wish-button position-relative">
+                            <svg class="product-icons-svg product-wish-icon" width="24" viewBox="0 0 26 26">
+                                <path class="path" d="M16.7,6a3.78,3.78,0,0,0-2.3.8A5.26,5.26,0,0,0,13,8.5a5,5,0,0,0-1.4-1.6A3.52,3.52,0,0,0,9.3,6a4.33,4.33,0,0,0-4.2,4.6c0,2.8,2.3,4.7,5.7,7.7.6.5,1.2,1.1,1.9,1.7H13a.37.37,0,0,0,.3-.1c.7-.6,1.3-1.2,1.9-1.7,3.4-2.9,5.7-4.8,5.7-7.7A4.3,4.3,0,0,0,16.7,6Z"></path>
+                            </svg>
+                            <svg class="product-icons-svg add-to-wishlist" width="24" viewBox="0 0 26 26">
+                                <path class="path" d="M16.7,6a3.78,3.78,0,0,0-2.3.8A5.26,5.26,0,0,0,13,8.5a5,5,0,0,0-1.4-1.6A3.52,3.52,0,0,0,9.3,6a4.33,4.33,0,0,0-4.2,4.6c0,2.8,2.3,4.7,5.7,7.7.6.5,1.2,1.1,1.9,1.7H13a.37.37,0,0,0,.3-.1c.7-.6,1.3-1.2,1.9-1.7,3.4-2.9,5.7-4.8,5.7-7.7A4.3,4.3,0,0,0,16.7,6Z"></path>
+                            </svg>
+                            <span class="wishlist-tooltip">Add to wishlist</span>
+                        </button>
+                        <button class="product-preview-button position-relative">
+                            <svg class="product-icons-svg" width="24" viewBox="0 0 26 26">
+                                <defs>
+                                    <style>
+                                        .path {
+                                            fill: none;
+                                            stroke-miterlimit: 10;
+                                        }
+                                    </style>
+                                </defs>
+                                <line x1="7" y1="7" x2="11.29" y2="11.29" class="path"></line>
+                                <line x1="14.62" y1="14.62" x2="18.91" y2="18.91" class="path"></line>
+                                <polyline points="7 15.57 7 19 10.43 19" class="path"></polyline>
+                                <polyline points="15.57 19 19 19 19 15.57" class="path"></polyline>
+                                <polyline points="10.43 7 7 7 7 10.43" class="path"></polyline>
+                                <polyline points="19 10.43 19 7 15.57 7" class="path"></polyline>
+                                <line x1="14.71" y1="11.29" x2="19" y2="7" class="path"></line>
+                                <line x1="7" y1="19" x2="11.29" y2="14.71" class="path"></line>
+                            </svg>
+                            <span class="preview-tooltip">Preview</span>
+                        </button>
+                    </div>
+                    <img class="w-100" src="assets/img/jeweler2-product-pic6-800x800.webp" alt="" />
+                    <div class="product-details">
+                        <h6 class="product-item">Gold necklace</h6>
+                        <p>$100.00 – $300.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="products-gallery">
+                    <div class="product-icons">
+                        <button class="product-link-button">
+                            <svg class="product-icons-svg" width="24" viewBox="0 0 26 26">
+                                <defs>
+                                    <style>
+                                        .path {
+                                            stroke-miterlimit: 10;
+                                        }
+                                    </style>
+                                </defs>
+                                <g>
+                                    <path d="M10.17,8.76l2.12-2.12a5,5,0,0,1,7.07,0h0a5,5,0,0,1,0,7.07l-2.12,2.12" class="path"></path>
+                                    <path d="M15.83,17.24l-2.12,2.12a5,5,0,0,1-7.07,0h0a5,5,0,0,1,0-7.07l2.12-2.12" class="path"></path>
+                                    <line x1="10.17" y1="15.83" x2="15.83" y2="10.17" class="path"></line>
+                                </g>
+                            </svg>
+                            <span class="product-tooltip">View product</span>
+                        </button>
+                        <button class="product-wish-button position-relative">
+                            <svg class="product-icons-svg product-wish-icon" width="24" viewBox="0 0 26 26">
+                                <path class="path" d="M16.7,6a3.78,3.78,0,0,0-2.3.8A5.26,5.26,0,0,0,13,8.5a5,5,0,0,0-1.4-1.6A3.52,3.52,0,0,0,9.3,6a4.33,4.33,0,0,0-4.2,4.6c0,2.8,2.3,4.7,5.7,7.7.6.5,1.2,1.1,1.9,1.7H13a.37.37,0,0,0,.3-.1c.7-.6,1.3-1.2,1.9-1.7,3.4-2.9,5.7-4.8,5.7-7.7A4.3,4.3,0,0,0,16.7,6Z"></path>
+                            </svg>
+                            <svg class="product-icons-svg add-to-wishlist" width="24" viewBox="0 0 26 26">
+                                <path class="path" d="M16.7,6a3.78,3.78,0,0,0-2.3.8A5.26,5.26,0,0,0,13,8.5a5,5,0,0,0-1.4-1.6A3.52,3.52,0,0,0,9.3,6a4.33,4.33,0,0,0-4.2,4.6c0,2.8,2.3,4.7,5.7,7.7.6.5,1.2,1.1,1.9,1.7H13a.37.37,0,0,0,.3-.1c.7-.6,1.3-1.2,1.9-1.7,3.4-2.9,5.7-4.8,5.7-7.7A4.3,4.3,0,0,0,16.7,6Z"></path>
+                            </svg>
+                            <span class="wishlist-tooltip">Add to wishlist</span>
+                        </button>
+                        <button class="product-preview-button position-relative">
+                            <svg class="product-icons-svg" width="24" viewBox="0 0 26 26">
+                                <defs>
+                                    <style>
+                                        .path {
+                                            fill: none;
+                                            stroke-miterlimit: 10;
+                                        }
+                                    </style>
+                                </defs>
+                                <line x1="7" y1="7" x2="11.29" y2="11.29" class="path"></line>
+                                <line x1="14.62" y1="14.62" x2="18.91" y2="18.91" class="path"></line>
+                                <polyline points="7 15.57 7 19 10.43 19" class="path"></polyline>
+                                <polyline points="15.57 19 19 19 19 15.57" class="path"></polyline>
+                                <polyline points="10.43 7 7 7 7 10.43" class="path"></polyline>
+                                <polyline points="19 10.43 19 7 15.57 7" class="path"></polyline>
+                                <line x1="14.71" y1="11.29" x2="19" y2="7" class="path"></line>
+                                <line x1="7" y1="19" x2="11.29" y2="14.71" class="path"></line>
+                            </svg>
+                            <span class="preview-tooltip">Preview</span>
+                        </button>
+                    </div>
+                    <p class="product-discount">-15%</p>
+                    <img class="w-100" src="assets/img/jeweler2-product-pic4-800x800.webp" alt="" />
+                    <div class="product-details">
+                        <h6 class="product-item">Wedding ring</h6>
+                        <p>$125.00 – $320.00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- FILTER -->
+<div class="filter-toggle">
+    <h2 class="filter-heading">Filter by Attributes</h2>
+    <div class="filter-gems">
+        <h5 class="filter-types-heading">Gem</h5>
+        <div class="filter-checkboxes">
+            <div class="pb-1">
+                <input type="checkbox" /> <span>Amethyst</span>
+            </div>
+            <div class="pb-1">
+                <input type="checkbox" /> <span>Diamond</span>
+            </div>
+            <div class="pb-1">
+                <input type="checkbox" /> <span>Emerald</span>
+            </div>
+            <div class="pb-1"><input type="checkbox" /> <span>Ruby</span></div>
+            <div class="pb-1">
+                <input type="checkbox" /> <span>Sapphire</span>
+            </div>
+            <div class="pb-1"><input type="checkbox" /> <span>Topaz</span></div>
+        </div>
+    </div>
+    <div class="filter-materials">
+        <h5 class="filter-types-heading">Material</h5>
+        <div class="d-flex">
+            <div class="position-relative filter-material-box">
+                <img class="filter-material-image" src="assets/img/jeweler2-material1.webp" alt="" />
+                <span class="material-tooltip">Gold</span>
+            </div>
+            <div class="position-relative filter-material-box">
+                <img class="filter-material-image" src="assets/img/jeweler2-material2.webp" alt="" />
+                <span class="material-tooltip">Platinum</span>
+            </div>
+            <div class="position-relative filter-material-box">
+                <img class="filter-material-image" src="assets/img/jeweler2-material3.webp" alt="" />
+                <span class="material-tooltip">Silver</span>
+            </div>
+        </div>
+    </div>
+    <div class="filter-sizes">
+        <div>
+            <h5 class="preview-options">Size</h5>
+            <p class="preview-size-box">
+                <span class="preview-size">6</span>
+                <span class="preview-size">7</span>
+                <span class="preview-size">8</span>
+                <span class="preview-size">8.5</span>
+                <span class="preview-size">9</span>
+                <span class="preview-size">9.5</span>
+                <span class="preview-size">10</span>
+                <span class="preview-size">12</span>
+                <span class="preview-size">14</span>
+                <span class="preview-size">16</span>
+            </p>
+        </div>
+    </div>
+    <div class="filter-categories">
+        <h2 class="filter-heading pb-3">Categories</h2>
+        <a class="filter-links" href="#">Bracelets</a>
+        <a class="filter-links" href="#">Earrings</a>
+        <a class="filter-links" href="#">Necklaces</a>
+        <a class="filter-links" href="#">Rings</a>
+        <a class="filter-links" href="#">Tiaras</a>
+        <a class="filter-links" href="#">Watches</a>
+    </div>
+    <div class="filter-heading pb-3">Filter by price</div>
+</div>
+
+<!-- FOOTER -->
+<!-- FOOTER -->
+<footer>
+
+    <!-- FOOTER GALLERY -->
+    <div class="gallery-popup">
+        <button class="gallery-popup-arrows popup-left">
+            <div class="popup-left-arrow"></div>
+        </button>
+        <button class="gallery-popup-arrows popup-right">
+            <div class="popup-right-arrow"></div>
+        </button>
+        <div class="d-flex flex-column">
+            <div class="popup-close">
+                <svg class="popup-close-svg" width="16px" height="16px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" fill="#ccc">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path fill="#ccc" d="M195.2 195.2a64 64 0 0 1 90.496 0L512 421.504 738.304 195.2a64 64 0 0 1 90.496 90.496L602.496 512 828.8 738.304a64 64 0 0 1-90.496 90.496L512 602.496 285.696 828.8a64 64 0 0 1-90.496-90.496L421.504 512 195.2 285.696a64 64 0 0 1 0-90.496z"></path>
+                    </g>
+                </svg>
+            </div>
+            <div class="popup-image-container">
+                <img src="../img/jeweler2-gallery-pic1.webp" class="large-image" alt="" />
+            </div>
+            <h6 class="index">1</h6>
+        </div>
+    </div>
+    <div class="container-fluid gallery-container">
+        <div class="row">
+            <div class="col-md-2 col-6 single-xl gallery-item">
+                <img class="gallery-image" src="assets/img/jeweler2-gallery-pic1.webp" alt="" />
+            </div>
+            <div class="col-md-2 col-6 single-xl gallery-item">
+                <img class="gallery-image" src="assets/img/jeweler2-gallery-pic2.webp" alt="" />
+            </div>
+            <div class="col-md-2 col-6 single-xl gallery-item">
+                <img class="gallery-image" src="assets/img/jeweler2-gallery-pic3.webp" alt="" />
+            </div>
+            <div class="col-md-2 col-6 single-xl gallery-item">
+                <img class="gallery-image" src="assets/img/jeweler2-gallery-pic4.webp" alt="" />
+            </div>
+            <div class="col-md-2 col-6 single-xl gallery-item">
+                <img class="gallery-image" src="assets/img/jeweler2-gallery-pic5.webp" alt="" />
+            </div>
+            <div class="col-md-2 col-6 single-xl gallery-item">
+                <img class="gallery-image" src="assets/img/jeweler2-gallery-pic6.webp" alt="" />
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER LINKS -->
+    <div class="footer-links-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 t-md-center mt-5 mt-md-0 mb-4 mb-md-0">
+                    <img src="assets/img/bejeweler2-logo.svg" alt="" />
+                    <p class="footer-paragraph">
+                        Quam pulvinar leo euismod id eu ultricies. Placerat proin
+                        rhoncus sit.
+                    </p>
+                    <div class="mt-4"><a class="btns copyright-button" href="contact.html">Contact us</a></div>
+                    <img class="footer-payment-image" src="assets/img/jeweler2-footer-payment.webp" alt="" />
+                </div>
+                <div class="col-md-3 t-md-center mb-4 mb-md-0">
+                    <h4>Useful links</h4>
+                    <ul class="footer-navigation-list">
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Help & About us</a></li>
+                        <li><a href="#">Shipping & Returns</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                    </ul>
+                    <h4>Delivery</h4>
+                    <ul class="footer-navigation-list">
+                        <li><a href="#">How it Works</a></li>
+                        <li><a href="#">Free Delivery</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 t-md-center mb-4 mb-md-0">
+                    <h4>Customer service</h4>
+                    <ul class="footer-navigation-list">
+                        <li><a href="#">Orders</a></li>
+                        <li><a href="#">Downloads</a></li>
+                        <li><a href="#">Addresses</a></li>
+                        <li><a href="#">Acount details</a></li>
+                        <li><a href="#">Lost password</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 t-md-center">
+                    <h4 class="footer-help">Need help?</h4>
+                    <h3 class="footer-phone">+61 (0) 383 766 284</h3>
+                    <h3>+61 (0) 383 766 284</h3>
+                    <p class="footer-hours">
+                        Monday – Friday: <br />
+                        8am – 5pm
+                    </p>
+                    <p>
+                        Saturday: <br />
+                        9am – 4pm
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER COPYRIGHT -->
+    <div class="copyright-section mb-md-2 mb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 order-2 order-md-1">
+                    <p class="copyright-paragraph t-md-center">
+                        © <script type="text/javascript">
+                            var year = new Date();
+                            document.write(year.getFullYear());
+                        </script> Created by | Khurram Shehzad |
+                    </p>
+                </div>
+                <div class="col-md-4 order-1 order-md-2 mb-3 mb-md-0 d-flex flex-column align-items-md-end align-items-center">
+                    <span class="scroll-top">
+                        <img class="w-75" src="assets/img/arrow-top-chevron-chevron-top-svgrepo-com.svg" alt="">
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<!-- Custom JS -->
+<script src="assets/js/script.js"></script>
+</body>
+
+</html>
